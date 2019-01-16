@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  users_id: 1
+  tours_id: 1
+  quantity: 1
+  price: 1.5
+  note: MyString
+
+two:
+  users_id: 1
+  tours_id: 1
+  quantity: 1
+  price: 1.5
+  note: MyString

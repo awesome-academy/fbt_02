@@ -1,0 +1,2 @@
+class ToursHotel < ApplicationRecord
+end
