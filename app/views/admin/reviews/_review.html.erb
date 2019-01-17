@@ -1,0 +1,8 @@
+<tr>
+  <td><%= comment.id %></td>
+  <td><%= comment.user.name %></td>
+  <td><%= comment.content %></td>
+  <td><%= comment.rep_id %></td>
+  <td><%=link_to t("admin.review.delete"),
+    admin_reviews_path(comment), method: :delete %></td>
+</tr>

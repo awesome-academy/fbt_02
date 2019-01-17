@@ -20,6 +20,17 @@ User.create!(email: "thuan.nguyenvan0501.work@gmail.com",
               avatar: "thuan.jpg",
               role: 1)
 
+User.create!(email: "thuan.nguyenvan0501@gmail.com",
+              password: "123456",
+              password_confirmation: "123456",
+              name: "Nguyen Van Thuan",
+              gender: "nam",
+              date_of_birth: "05/01/1997",
+              address: "19 phu xuan 3",
+              phone: "0935746935",
+              avatar: "thuan.jpg",
+              role: 0)
+
 Category.create!(name: "Domestic")
 Category.create!(name: "Foreign")
 
@@ -181,3 +192,11 @@ BookTour.create!(user_id: User.first.id,
 Rating.create!(rating: 7,
                user_id: 1,
                tour_id: 1)
+
+Comment.create!(content: "du lich nay rat vui va bo ich",
+                user_id: 1,
+                tour_id: 1)
+
+Comment.create!(content: "du lich nay khong thu vi",
+                user_id: 1,
+                tour_id: 2)
