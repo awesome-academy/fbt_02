@@ -1,0 +1,11 @@
+<tr>
+  <td><%= user.id %></td>
+  <td><%= user.name %></td>
+  <td><%= user.gender %></td>
+  <td><%= user.date_of_birth %></td>
+  <td><%= user.address %></td>
+  <td><%= user.phone %></td>
+  <td><%= user.role %></td>
+  <td><%=link_to t("admin.user.delete"),
+    admin_users_path(user), method: :delete %></td>
+</tr>

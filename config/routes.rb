@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :admin do
     root "static_pages#index"
     resources :reviews
+    resources :users
   end
   get "/login", to: "sessions#login"
   post "/login", to: "sessions#create"

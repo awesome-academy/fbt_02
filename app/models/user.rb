@@ -20,6 +20,8 @@ class User < ApplicationRecord
 
   before_save{email.downcase!}
 
+  scope :newest, ->{order :created_at}
+
   has_secure_password
 
   def self.digest string
