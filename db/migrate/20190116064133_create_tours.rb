@@ -7,8 +7,7 @@ class CreateTours < ActiveRecord::Migration[5.2]
       t.datetime :end_tour
       t.string :start_palace
       t.string :end_palace
-      t.integer :hotels_id
-      t.integer :categoies_id
+      t.integer :category_id
       t.string :route
       t.string :transport
       t.integer :quantity

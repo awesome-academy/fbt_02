@@ -7,9 +7,9 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :gender
       t.datetime :date_of_birth
       t.string :address
-      t.string :number_phone
+      t.string :phone
       t.string :avatar
-      t.integer :role
+      t.integer :role, default: 0, null:false
 
       t.timestamps
     end
