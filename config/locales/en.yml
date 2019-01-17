@@ -69,8 +69,7 @@ en:
   footer:
     about: "About us"
     offices: "Office"
-    service: "<a href='#'>Software Development</a> </br> <a href='#'>Human Development</a> </br>
-    <a href='#'>Bussiness Development</a> </br> <a href='#'>BOOKING TOURS</a>"
+    service: "<a href='#'>Software Development</a> </br> <a href='#'>Human Development</a> </br> <a href='#'>Bussiness Development</a> </br> <a href='#'>BOOKING TOURS</a>"
     office: "<a href='#'>Ha Noi Office</a> </br> <a href='#'>Da Nang Office</a> </br> <a href='#'>Ho Chi Minh Office</a>"
     sub: "Subcribe"
     content_sub: "Receive news and offers from Framgia"
