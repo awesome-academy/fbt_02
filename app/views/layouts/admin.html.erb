@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> <%= t("admin.title") %></title>
+    <%= render "admin/layout/rails_default" %>
+    <%= render "admin/layout/shim" %>
+  </head>
+
+  <body>
+    <%= render "admin/layout/header" %>
+    <%= render "admin/layout/sidebar" %>
+    <%= yield %>
+  </body>
+</html>
