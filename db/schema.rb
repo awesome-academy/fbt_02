@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_16_070717) do
+ActiveRecord::Schema.define(version: 2019_01_21_072235) do
 
   create_table "book_tours", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
@@ -86,8 +86,6 @@ ActiveRecord::Schema.define(version: 2019_01_16_070717) do
     t.string "phone"
     t.string "avatar"
     t.integer "role", default: 0, null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

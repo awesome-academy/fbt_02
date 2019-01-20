@@ -46,6 +46,9 @@ bower.json
 
 # Ignore node_modules
 node_modules/
+
+#image
+public/images
 #database
 config/database.yml
 #image
