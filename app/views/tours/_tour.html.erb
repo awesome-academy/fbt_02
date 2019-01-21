@@ -1,0 +1,32 @@
+<div class="col-md-4 ftco-animate">
+  <div class="destination">
+    <a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(<%= tour.image %>);">
+      <div class="icon d-flex justify-content-center align-items-center">
+      </div>
+    </a>
+    <div class="text p-3">
+      <div class="d-flex">
+        <div class="one">
+          <h3>
+            <%= link_to tour.name, tour %>
+          </h3>
+        </div>
+        <div class="two">
+          <span class="price">
+            <%= t("dola") %><%= tour.price %>
+          </span>
+        </div>
+      </div>
+      <p>
+        <%= route(tour.route) %>
+      </p>
+      <p class="days"><span><%= tour.start_tour.strftime t("tour.fomat_date") %><%= t("to")%>
+        <%= tour.end_tour.strftime t("tour.fomat_date") %></span></p>
+      <hr>
+      <p class="bottom-area d-flex">
+        <span><i class="icon-map-o"></i><%= tour.category.name %></span>
+        <span class="ml-auto"><a href=""><%= t("tour.discover") %></a></span>
+      </p>
+    </div>
+  </div>
+</div>

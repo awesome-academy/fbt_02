@@ -11,6 +11,7 @@ class CreateTours < ActiveRecord::Migration[5.2]
       t.string :route
       t.string :transport
       t.integer :quantity
+      t.string :image
 
       t.timestamps
     end

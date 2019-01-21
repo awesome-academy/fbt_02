@@ -1,0 +1,10 @@
+<% provide(:title, t("tour.all_tour")) %>
+<h1><%= t("tour.all_tour") %></h1>
+
+<%= will_paginate %>
+
+<ul class="tours">
+  <%= render @tours %>
+</ul>
+
+<%= will_paginate %>

@@ -1,5 +1,11 @@
 en:
+  to: " To "
+  dola: "$ "
   hello: "Hello world"
   layouts:
     application:
       booking_tour: "BookingTour"
+  tour:
+    discover: "Discover"
+    all_tour: "All tour"
+    fomat_date: "%d/%m/%Y"
