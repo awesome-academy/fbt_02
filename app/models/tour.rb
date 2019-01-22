@@ -4,4 +4,6 @@ class Tour < ApplicationRecord
   has_many :ratings
   has_many :comments
   has_many :book_tours
+
+  scope :newest, -> {order :created_at}
 end
