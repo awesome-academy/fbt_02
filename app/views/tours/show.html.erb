@@ -1,0 +1,47 @@
+<div class="container">
+  <article class="product-corporate">
+    <figure class="product-corporate-figure">
+      <%= image_tag "/#{@tour.image}", class: "product-corporate-image" %>
+    </figure>
+    <div class="product-corporate-main offset-top-35">
+      <h2><%= @tour.name %></h2>
+      <div class="product-corporate-info">
+        <p><%= t("tour.route") %><%= @tour.route %></p>
+      </div>
+      <table class="product-corporate-meta">
+        <tbody>
+        <tr>
+          <td><%= t("tour.time") %></td>
+          <td><%= @tour.start_tour.strftime t("tour.fomat_date") %><%= t("to") %>
+        <%= @tour.end_tour.strftime t("tour.fomat_date") %></td>
+        </tr>
+        <tr>
+          <td><%= t("tour.start_palace") %></td>
+          <td><%= @tour.start_palace %></td>
+        </tr>
+        <tr>
+          <td><%= t("tour.end_palace") %></td>
+          <td><%= @tour.end_palace %></td>
+        </tr>
+        <tr>
+          <td><%= t("tour.transport") %></td>
+          <td><%= @tour.transport %></td>
+        </tr>
+        <tr>
+          <td><%= t("tour.quantity") %></td>
+          <td><%= @tour.quantity %></td>
+        </tr>
+        <tr>
+          <td><%= t("tour.category") %></td>
+          <td><%= @tour.category.name %></td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="product-corporate-group group group-middle">
+        <p class="product-corporate-price heading-3"><%= t("dola")%><%= @tour.price %></p>
+        <div><a class="button button-lg button-primary" href="shopping-cart.html">
+          <%= t("tour.book_tour") %></a></div>
+      </div>
+    </div>
+  </article>
+</div>

@@ -9,3 +9,13 @@ en:
     discover: "Discover"
     all_tour: "All tour"
     fomat_date: "%d/%m/%Y"
+    route: "Route Trip :  "
+    time: "Time: "
+    transport: "Transport: "
+    quantity: "Quantity: "
+    category: "Category: "
+    start_palace: "Start palace: "
+    end_palace: "End palace: "
+    book_tour: "Book a tour"
+  messenger:
+    no_data: "Sorry, the data can not be found"
