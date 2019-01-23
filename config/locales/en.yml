@@ -2,6 +2,9 @@ en:
   to: " To "
   dola: "$ "
   hello: "Hello world"
+  login: "Log in"
+  new_user: "New user?"
+  sin_up: "Sign up now!"
   layouts:
     application:
       booking_tour: "BookingTour"
@@ -19,6 +22,7 @@ en:
     book_tour: "Book a tour"
   messenger:
     no_data: "Sorry, the data can not be found"
+    login_fail: "Invalid email/password combination"
   home:
     title: "Home"
     destination: "Destination"
