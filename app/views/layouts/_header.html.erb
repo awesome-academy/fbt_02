@@ -4,7 +4,7 @@
     <div class="header__inner">
       <div class="header__logo_menu_wrap">
         <div class="header__logo">
-          <%= link_to image_tag("/images/logo-framgia.png"), "home" %>
+          <%= link_to image_tag("/images/logo-framgia.png"), root_path %>
         </div>
         <div class="header__menu">
 
@@ -14,14 +14,11 @@
             <!-- onepage-menu -->
             <ul class="onepage-menu">
               <li class="current-menu-item">
-                <%= link_to t("home.title"), "home" %></li>
-                <li><%= link_to t("home.destination") %></li>
-                <li><%= link_to t("home.city") %></li>
-                <li><%= link_to t("home.detail") %></li>
+                <%= link_to t("home.title"), root_path %></li>
+                <li><%= link_to t("home.tour"), tours_path %></li>
                 <li><%= link_to t("home.about") %></li>
-                <li><%= link_to t("home.login") %></li>
+                <li><%= link_to t("home.login"), login_path %></li>
               </ul><!-- onepage-menu -->
-
               <div class="navbar-toggle">
                 <span></span><span></span><span></span></div>
               </nav><!-- End / onepage-nav -->
@@ -29,24 +26,45 @@
             </div>
           </div>
           <div class="header__hotline_book_wrap">
-            <div class="header__lang"><%= link_to t("home.en") %></span>
-              <i class="fa fa-angle-down"></i>
-              <ul class="header__lang_box">
-                <li><%= link_to image_tag("/images/flag/flag_vn.png") %>
-                  <span><%= t("home.vn") %></span></li>
-                  <li><%=link_to image_tag "/images/flag/flag_en.jpg" %>
-                    <span><%= t("home.en") %></span></li>
-                  </ul>
-                </div>
                 <div class="header__hotline"><span><i class="fa fa-phone"></i>
                   <%= t "home.hotline" %></span>
                   <%= t "home.phone" %></div>
                   <div class="header__booking">
-                    <%= link_to t("home.booking"), "#", class: "md-btn md-btn--primary md-btn--pill" %>
+                    <%= link_to t("home.booking"), tours_path, class: "md-btn md-btn--primary md-btn--pill" %>
                   </div>
                 </div>
               </div>
             </div>
           </header><!-- End / header -->
-        </div>
-      </div>
+          <div class="swiper__module swiper-container awe-skin-dark hero__main_slider" data-options='{"spaceBetween":0}'>
+            <div class="swiper-wrapper">
+              <div class="hero__item" style="background-image: url('/images/hero/1.jpg');"><%= image_tag "/images/hero/1.jpg" %>
+                <div class="hero__box_info">
+                  <div class="container">
+                    <h2 class="hero__title">Vibrant Hong Kong: 3 Day</h2>
+                    <p class="hero__info"><span>3 Day 2 Night</span><span>Tokyo</span><span>709 Review</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__item" style="background-image: url('/images/hero/2.jpg');"><%= image_tag "/images/hero/2.jpg" %>
+                <div class="hero__box_info">
+                  <div class="container">
+                    <h2 class="hero__title">Splendours of India: Holiday of a Lifetime</h2>
+                    <p class="hero__info"><span>3 Day 2 Night</span><span>Beijing</span><span>780 Review</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="hero__item" style="background-image: url('/images/hero/3.jpg');"><%= image_tag "/images/hero/3.jpg" %>
+                <div class="hero__box_info">
+                  <div class="container">
+                    <h2 class="hero__title">Discover Hong Kong and Bangkok incl. Airfare</h2>
+                    <p class="hero__info"><span>3 Day 2 Night</span><span>Nara</span><span>746 Review</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-custom">
+              <div class="swiper-button-prev-custom"></div>
+              <div class="swiper-button-next-custom"></div>
+            </div>
+          </div>

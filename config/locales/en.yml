@@ -12,7 +12,7 @@ en:
     discover: "Discover"
     all_tour: "All tour"
     fomat_date: "%d/%m/%Y"
-    route: "Route Trip :  "
+    route: "Route Trip : "
     time: "Time: "
     transport: "Transport: "
     quantity: "Quantity: "
@@ -25,7 +25,7 @@ en:
     login_fail: "Invalid email/password combination"
   home:
     title: "Home"
-    destination: "Destination"
+    tour: "Tour"
     city: "City"
     detail: "Detail"
     about: "About"
@@ -64,6 +64,7 @@ en:
     copyright: "2018 &copy; Copyright<a href='https://framgia.vn'> Framgia Booking Tours</a>."
     back_to_top: "Back to top"
     yourmail: "Your mail here"
+    support: "Support"
   framgia:
     base_title: "Framgia booking tours"
   admin:

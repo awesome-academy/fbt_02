@@ -62,8 +62,8 @@ figure {
 }
 
 img {
- vertical-align:middle;
- border-style:none
+  vertical-align:middle;
+  border-style:none
 }
 
 h1,h2,h3,h4,h5,h6,[class*=heading-] {
@@ -128,7 +128,7 @@ table {
 html .group-middle {
  display:inline-table
 }
-.container {
+.containers {
  width:100%;
  padding-right:15px;
  padding-left:15px;
@@ -152,31 +152,32 @@ html .group>* {
  margin-left:15px
 }
 
-.container{
+.containers{
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media(min-width:576px) {
- .container {
+ .containers {
   max-width:540px
  }
 }
 @media(min-width:768px) {
- .container {
+ .containers {
   max-width:720px
  }
 }
 @media(min-width:992px) {
- .container {
+ .containers {
   max-width:960px
  }
 }
 @media(min-width:1200px) {
- .container {
+ .containers {
   max-width:1200px
  }
 }
-.container-fluid {
+.containers-fluid {
  width:100%;
  padding-right:15px;
  padding-left:15px;
@@ -197,6 +198,7 @@ html .group>* {
   display:flex
  }
  .product-corporate-figure {
+  margin-top: 50px;
   padding-right:30px
  }
  .product-corporate-figure,.product-corporate-main {
@@ -309,5 +311,10 @@ html .group>* {
   p{
     font-size: 1.5em;
     line-height: 1.7em;
+  }
+}
+.ml-auto{
+  a{
+    margin-left: 230px;
   }
 }
