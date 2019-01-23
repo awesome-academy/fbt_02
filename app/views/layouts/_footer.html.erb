@@ -1,0 +1,75 @@
+<!-- footer -->
+<div class="footer">
+  <div class="container">
+    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2  col-xxs-12">
+      <h6 class="footer__title"><%= t("footer.about") %></h6>
+
+      <!-- widget_list -->
+      <div class="widget_list">
+        <li><%= raw t("footer.service") %></li>
+
+      </div><!-- End / widget_list -->
+
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2  col-xxs-12">
+      <h6 class="footer__title"><%= t("footer.offices") %></h6>
+
+      <!-- widget_list -->
+      <div class="widget_list">
+        <li><%= raw t("footer.office") %></li>
+      </div><!-- End / widget_list -->
+
+    </div>
+    <div class="col-md-4 col-lg-4 ">
+      <h6 class="footer__title"><%= t("footer.offices") %></h6>
+      <p style="opacity:.7;"><%= t("footer.content_sub") %></p>
+      <div class="footer__form_wrapper">
+
+        <!-- form-item -->
+        <div class="form-item">
+          <input class="form-control" type="text" name="input" placeholder="<%= t "footer.yourmail" %>"/>
+        </div><!-- End / form-item -->
+
+
+        <!-- form-item -->
+        <div class="form-item">
+          <%= link_to t("footer.send"), "#", class: "md-btn footer__btn_custom" %>
+        </div><!-- End / form-item -->
+
+      </div>
+      <div class="footer__social">
+        <span style="font-size:18px;font-weight:bold;">
+          <%= t("footer.content_letgo")%>
+        </span>
+
+        <%= link_to "#", class: "social-icon" do %>
+          <i class="fa fa-facebook"></i>
+        <% end %>
+
+        <%= link_to "#", class: "social-icon" do %>
+          <i class="fa fa-twitter"></i>
+        <% end %>
+
+        <%= link_to "#", class: "social-icon" do %>
+          <i class="fa fa-linkedin"></i>
+        <% end %>
+
+        <%= link_to "#", class: "social-icon" do %>
+          <i class="fa fa-behance"></i>
+        <% end %>
+
+        <%= link_to "#", class: "social-icon" do %>
+          <i class="fa fa-vimeo"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div><!-- End / footer -->
+<div class="footer__wrapper">
+  <div class="container">
+    <p class="footer__copy"><%= raw t("footer.copyright") %></p>
+    <span class="footer__backtotop" id="back-to-top">
+      <i class="fa fa-arrow-up"></i><%= raw t("footer.back_to_top") %>
+    </span>
+  </div>
+</div>

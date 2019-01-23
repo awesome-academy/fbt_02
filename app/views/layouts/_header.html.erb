@@ -1,0 +1,50 @@
+<!-- header -->
+<header class="header awe-skin-dark header--fixed">
+  <div class="container-fluid pd-0">
+    <div class="header__inner">
+      <div class="header__logo_menu_wrap">
+        <div class="header__logo">
+          <%= link_to image_tag("/images/logo-framgia.png"), "home" %>
+        </div>
+        <div class="header__menu">
+
+          <!-- onepage-nav -->
+          <nav class="onepage-nav">
+
+            <!-- onepage-menu -->
+            <ul class="onepage-menu">
+              <li class="current-menu-item">
+                <%= link_to t("home.title"), "home" %></li>
+              <li><%= link_to t("home.destination") %></li>
+              <li><%= link_to t("home.city") %></li>
+              <li><%= link_to t("home.detail") %></li>
+              <li><%= link_to t("home.about") %></li>
+              <li><%= link_to t("home.login") %></li>
+            </ul><!-- onepage-menu -->
+
+            <div class="navbar-toggle">
+              <span></span><span></span><span></span></div>
+            </nav><!-- End / onepage-nav -->
+
+          </div>
+        </div>
+        <div class="header__hotline_book_wrap">
+          <div class="header__lang"><%= link_to t("home.en") %></span>
+            <i class="fa fa-angle-down"></i>
+            <ul class="header__lang_box">
+              <li><%= link_to image_tag("/images/flag/flag_vn.png") %>
+                <span><%= t("home.vn") %></span></li>
+                <li><%=link_to image_tag "/images/flag/flag_en.jpg" %>
+                  <span><%= t("home.en") %></span></li>
+                </ul>
+              </div>
+              <div class="header__hotline"><span><i class="fa fa-phone"></i>
+                <%= t "home.hotline" %></span>
+                <%= t "home.phone" %></div>
+              <div class="header__booking">
+                <%= link_to t("home.booking"), "#", class: "md-btn md-btn--primary md-btn--pill" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header><!-- End / header -->
