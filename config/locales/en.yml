@@ -32,12 +32,14 @@ en:
     hotline: "Hotline"
     booking: "Booking"
   content:
+    select: "select"
     what: "What"
     answer_what: "What would you like to do ?"
     where: "Where"
     answer_where: "Where would you like to go ?"
     when: "When"
-    search: "Sareach now"
+    answer_when: "When would you like to go ?"
+    search: "Search now"
     welcome: "Welcome to <span class='main-color'>Framgia</span><br />
       We've been pioneering unique journeys in<br /> <span class='main-color'>Asia</span> for more than two decades."
     content: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
@@ -60,3 +62,16 @@ en:
     yourmail: "Your mail here"
   framgia:
     base_title: "Framgia booking tours"
+  admin:
+    title: "Framgia booking tours"
+    dashboard: "Dashboard"
+    user: "User"
+    detail: "View detail"
+    invoice: "Invoice"
+    tour: "Tours"
+    statictis: "Statictis"
+    by: "by"
+    comments: "Comments"
+    category: "Category"
+    profile: "Profile"
+    header: "Header"
