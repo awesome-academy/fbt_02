@@ -6,6 +6,8 @@ en:
   new_user: "New user?"
   sin_up: "Sign up now!"
   tour_infor: "Confirm Tour"
+  welcome: "Welcome to Framgia Booking Tour"
+  error: "The form contains %{errors_count}."
   layouts:
     application:
       booking_tour: "BookingTour"
@@ -21,6 +23,8 @@ en:
     start_palace: "Start palace : "
     end_palace: "End palace : "
     book_tour: "Book a tour"
+    list_tour: "List tour"
+    tour_invoice: "Tour invoice"
   book_tour:
     customer_name: "Customer : "
     address: "Address : "
@@ -31,8 +35,14 @@ en:
     date_birth: "Birthday : "
     quantity: "Quantity"
     note: "Note"
+    cancel_tour: "Cancel a tour"
+    delete: "Delete"
+    you_sure: "Are You sure?"
+    cancel_success: "Cancel successfully"
+    cancel_fails: "Cancel failed"
   messenger:
     no_data: "Sorry, the data can not be found"
+    no_user: "Sorry, Unable to load user data"
     login_fail: "Invalid email/password combination"
     success_tour: "Successful tour bookings"
     book_fails: "Tour booking failure"
@@ -93,3 +103,23 @@ en:
     category: "Category"
     profile: "Profile"
     header: "Header"
+  user:
+    sign_up: "Sign up now!"
+    btntext: "Create my account"
+    male: "Male"
+    female: "Female"
+    login: "Login"
+    name: "Users"
+    profile: "Profile"
+    settings: "Settings"
+    log_out: "Log out"
+    log_in: "Log in"
+    account: "Account"
+  activerecord:
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password Confirmation"
+        address: "Address"

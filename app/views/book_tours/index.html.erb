@@ -1,0 +1,7 @@
+<% provide(:title, 'tour') %>
+<h1>tour</h1>
+
+<ul class="tours">
+    <%= render partial: "book_tours/tour", collection: @tours %>
+</ul>
+<%= will_paginate @tours %>

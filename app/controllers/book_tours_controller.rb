@@ -1,6 +1,10 @@
 class BookToursController < ApplicationController
   before_action :load_tour, only: :show
-  before_action :load_user, only: :show
+  
+  def index
+    @tours = current_user.tours.newest.paginate page: params[:page],
+      per_page: Settings.book_tour.per_page
+  end
 
   def create
     @tour = BookTour.new tour_params
@@ -20,13 +24,6 @@ class BookToursController < ApplicationController
   def load_tour
     @tour = Tour.find_by id: params[:id]
     return if @tour
-    flash[:danger] = t "messenger.no_data"
-    redirect_to tours_path
-  end
-
-  def load_user
-    @user = User.find_by id: params[:id]
-    return if @user
     flash[:danger] = t "messenger.no_data"
     redirect_to tours_path
   end

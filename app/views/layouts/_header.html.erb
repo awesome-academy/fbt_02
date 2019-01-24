@@ -7,17 +7,45 @@
           <%= link_to image_tag("/images/logo-framgia.png"), root_path %>
         </div>
         <div class="header__menu">
-
           <!-- onepage-nav -->
           <nav class="onepage-nav">
-
             <!-- onepage-menu -->
             <ul class="onepage-menu">
               <li class="current-menu-item">
                 <%= link_to t("home.title"), root_path %></li>
-                <li><%= link_to t("home.tour"), tours_path %></li>
+                <% if logged_in? %>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <%= t("home.tour") %><b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class= "color"><%= link_to t("tour.list_tour"),
+                        tours_path %></li>
+                      <li><%= link_to t("tour.tour_invoice"), book_tours_path %></li>
+                    </ul>
+                  </li>
+                <% else %>
+                  <li><%= link_to t("home.tour"), login_path %></li>
+                <% end %>
                 <li><%= link_to t("home.about") %></li>
-                <li><%= link_to t("home.login"), login_path %></li>
+                <% if logged_in? %>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <%= t("user.account") %><b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class= "color"><%= link_to t("user.profile"), current_user %></li>
+                      <li><%= link_to t("user.settings") %></li>
+                      <li class="divider"></li>
+                      <li>
+                        <%= link_to t("user.log_out"), logout_path,
+                          method: :delete %>
+                      </li>
+                    </ul>
+                  </li>
+                <% else %>
+                  <li><%= link_to t("user.log_in"), login_path %></li>
+                <% end %>
               </ul><!-- onepage-menu -->
               <div class="navbar-toggle">
                 <span></span><span></span><span></span></div>
