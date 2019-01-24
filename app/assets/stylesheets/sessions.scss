@@ -53,11 +53,6 @@ h2 {
   color: $gray-light;
 }
 
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
-
 /* forms */
 input, textarea, select, .uneditable-input {
   border: 1px solid $bbb;
@@ -104,4 +99,8 @@ input {
 
 .col-md-6.col-md-offset-3 label{
   margin-top: 15px;
+}
+
+.row{
+  margin-bottom: 40px;
 }
