@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root "static_pages#home"
-  resources :tours
   namespace :admin do
     root "static_pages#index"
   end
+  get "/login", to: "sessions#login"
+  post "/login", to: "sessions#create"
+  resources :tours
 end
