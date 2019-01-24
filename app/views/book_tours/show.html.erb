@@ -1,0 +1,73 @@
+<div class="product-corporate-main offset-top">
+  <h2><%= t("tour_infor") %></h2>
+  <table class="product-corporate-book">
+    <tbody>
+    <tr>
+      <td><%= t("book_tour.customer_name") %></td>
+      <td><%= current_user.name %></td>
+    </tr>
+    <tr>
+      <td><%= t("book_tour.address") %></td>
+      <td><%= current_user.address %></td>
+    </tr>
+    <tr>
+      <td><%= t("book_tour.phone") %></td>
+      <td><%= current_user.phone %></td>
+    </tr>
+    <tr>
+      <td><%= t("book_tour.gender") %></td>
+      <td><%= current_user.gender %></td>
+    </tr>
+    <tr>
+      <td><%= t("book_tour.date_birth") %></td>
+      <td><%= current_user.date_of_birth.
+        strftime t("tour.fomat_date") %></td>
+    </tr>
+    <tr>
+      <td><%= t("book_tour.name_tour") %></td>
+      <td><%= @tour.name %></td>
+    </tr>
+    <tr>
+      <td><%= t("book_tour.price") %></td>
+      <td><%= @tour.price %><%= t("dola")%></td>
+    </tr>
+    <tr>
+      <td><%= t("tour.time") %></td>
+      <td><%= @tour.start_tour.strftime t("tour.fomat_date") %><%= t("to") %>
+    <%= @tour.end_tour.strftime t("tour.fomat_date") %></td>
+    </tr>
+    <tr>
+      <td><%= t("tour.start_palace") %></td>
+      <td><%= @tour.start_palace %></td>
+    </tr>
+    <tr>
+      <td><%= t("tour.end_palace") %></td>
+      <td><%= @tour.end_palace %></td>
+    </tr>
+    <tr>
+      <td><%= t("tour.transport") %></td>
+      <td><%= @tour.transport %></td>
+    </tr>
+    <tr>
+      <td><%= t("tour.category") %></td>
+      <td><%= @tour.category.name %></td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="col-md-8 col-md-offset-2">
+    <%= form_for(:book_tour, url: book_tours_path) do |f| %>
+      <%= f.hidden_field :user_id, value: current_user.id %>
+      <%= f.hidden_field :tour_id, value: @tour.id %>
+      <%= f.hidden_field :price, value: @tour.price %>
+      <%= f.label t("book_tour.quantity") %>
+      <%= f.number_field :quantity, class: "form-control",
+        min: Settings.book_tour.min_quantity,
+        max: Settings.book_tour.max_quantity %>
+      <%= f.label t("book_tour.note") %>
+      <%= f.text_field :note, class: "form-control" %>
+      <%= f.submit t("tour.book_tour"),
+        class: "btn btn-lg btn-primary" %>
+    <% end %>
+  </div>
+  </form>
+</div>

@@ -2,3 +2,6 @@ tour:
   per_page: 9
   length_small: 5
   length_big: 50
+book_tour:
+  min_quantity: 1
+  max_quantity: 49

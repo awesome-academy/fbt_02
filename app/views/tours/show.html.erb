@@ -39,8 +39,7 @@
       </table>
       <div class="product-corporate-group group group-middle">
         <p class="product-corporate-price heading-3"><%= t("dola")%><%= @tour.price %></p>
-        <div><a class="button button-lg button-primary" href="shopping-cart.html">
-          <%= t("tour.book_tour") %></a></div>
+        <div><%= link_to t("tour.book_tour"), book_tour_path, class: "button button-lg button-primary" %></div>
       </div>
     </div>
   </article>
