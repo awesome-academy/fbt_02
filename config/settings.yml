@@ -5,3 +5,13 @@ tour:
 book_tour:
   min_quantity: 1
   max_quantity: 49
+avatar:
+  size: 80
+user:
+  name:
+    max_length: 50
+  email:
+    max_length: 255
+  password:
+    min_length: 6
+    max_length: 30

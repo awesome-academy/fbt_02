@@ -6,6 +6,8 @@ en:
   new_user: "New user?"
   sin_up: "Sign up now!"
   tour_infor: "Confirm Tour"
+  welcome: "Welcome to Framgia Booking Tour"
+  error: "The form contains %{errors_count}."
   layouts:
     application:
       booking_tour: "BookingTour"
@@ -93,3 +95,16 @@ en:
     category: "Category"
     profile: "Profile"
     header: "Header"
+  user:
+    sign_up: "Sign up now!"
+    btntext: "Create my account"
+    male: "Male"
+    female: "Female"
+  activerecord:
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password Confirmation"
+        address: "Address"
