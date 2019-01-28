@@ -15,8 +15,10 @@
 //= require turbolinks
 //= require bootstrap
 //= require magnific-popup
+//= require jquery-ui
 //= require rails-ujs
 //= require activestorage
+//= require turbolinks
 //= require_tree ../../../vendor/assets/js
 
 

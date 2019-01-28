@@ -1,4 +1,4 @@
 <% provide :title, t("home.title") %>
 <div class="page-wrap" id="root">
-  <%= render "layouts/content" %>
+  <%= render partial: "static_pages/content", locals: {tours: @tours} %>
 </div>

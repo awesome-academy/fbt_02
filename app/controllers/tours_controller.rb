@@ -1,8 +1,8 @@
 class ToursController < ApplicationController
   before_action :load_tour, only: :show
   def index
-    @tours = Tour.newest.paginate page: params[:page],
-      per_page: Settings.tour.per_page
+    @tours = Tour.newest.search_tour(params[:search])
+      .paginate page: params[:page], per_page: Settings.tour.per_page
   end
 
   def show; end

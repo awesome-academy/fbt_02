@@ -1220,6 +1220,8 @@ ul {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 25%;
+    margin-top: -6px;
+    margin-left: 260px;
 }
 
 .box-search .select2-container {
@@ -3944,4 +3946,8 @@ ul {
 .swiper-button-custom.style-02 .swiper-button-next-custom {
     position: absolute;
     right: -100px;
+}
+
+#search{
+    width: 500px;
 }
