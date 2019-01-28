@@ -11,6 +11,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
     @user.gender = params[:gender].to_i
     if @user.save
+      log_in @user
       flash[:success] = t "welcome"
       redirect_to root_path
     else

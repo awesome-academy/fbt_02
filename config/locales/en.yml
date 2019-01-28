@@ -35,6 +35,7 @@ en:
     note: "Note"
   messenger:
     no_data: "Sorry, the data can not be found"
+    no_user: "Sorry, Unable to load user data"
     login_fail: "Invalid email/password combination"
     success_tour: "Successful tour bookings"
     book_fails: "Tour booking failure"
@@ -100,6 +101,13 @@ en:
     btntext: "Create my account"
     male: "Male"
     female: "Female"
+    login: "Login"
+    name: "Users"
+    profile: "Profile"
+    settings: "Settings"
+    log_out: "Log out"
+    log_in: "Log in"
+    account: "Account"
   activerecord:
     attributes:
       user:
