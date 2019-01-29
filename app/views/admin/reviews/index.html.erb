@@ -1,0 +1,38 @@
+<% provide :title, t("admin.review.title") %>
+<body>
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header"><%= t("admin.review.title") %></h1>
+    </div>
+  </div>
+  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <div class="btn-group">
+      <div class="row">
+        <div class="navbar-form navbar-right">
+          <%= form_tag admin_reviews_path do %>
+          <%= label_tag :review %>
+          <%= text_field_tag :review %>
+          <%= submit_tag t("admin.review.search"), class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th><%= t("admin.id") %></th>
+            <th><%= t("admin.name") %></th>
+            <th><%= t("admin.content") %></th>
+            <th><%= t("admin.rep") %></th>
+            <th><%= t("admin.users.index.action") %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render partial: "review", collection: @reviews, as: :comment %>
+        </tbody>
+        <%= will_paginate %>
+      </table>
+    </div>
+  </div>
+</body>
