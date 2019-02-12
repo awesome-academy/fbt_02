@@ -125,6 +125,11 @@ en:
     log_out: "Log out"
     log_in: "Log in"
     account: "Account"
+    email: "Email: "
+    gender: "Gender: "
+    date_birth: "Birth Date: "
+    address: "Address: "
+    phone: "Phone: "
   activerecord:
     attributes:
       user:
@@ -134,3 +139,8 @@ en:
         password_confirmation: "Password Confirmation"
         address: "Address"
     rep: "Comment rep"
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%d/%m/%Y"
