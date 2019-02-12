@@ -1,11 +1,44 @@
 <% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
+<h1><%= t("user.profile") %></h1>
+<div class="profile">
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <h1>
+          <%= gravatar_for @user %>
+          <%= @user.name %>
+        </h1>
+        <div class="date">
+          <tr>
+            <td><%= t("user.date_birth") %></td>
+            <td><%= l @user.date_of_birth, format: :long %></td>
+          </tr>
+        </div>
+        <div class="info">
+          <tr>
+            <td><%= t("user.email") %></td>
+            <td><%= @user.email %></td>
+          </tr>
+        </div>
+        <div class="info">
+          <tr>
+            <td><%= t("user.gender") %></td>
+            <td><%= @user.gender %></td>
+          </tr>
+        </div>
+        <div class="info">
+          <tr>
+            <td><%= t("user.address") %></td>
+            <td><%= @user.address %></td>
+          </tr>
+        </div>
+        <div class="info">
+          <tr>
+            <td><%= t("user.phone") %></td>
+            <td><%= @user.phone %></td>
+          </tr>
+        </div>
+      </section>
+    </aside>
+  </div>
 </div>
