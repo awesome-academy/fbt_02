@@ -22,7 +22,7 @@ class SessionsController < ApplicationController
   def load_user
     @user = User.find_by email: params[:session][:email].downcase
     return if @user
-    flash[:danger] = t "layouts.messages.no_data"
+    flash[:danger] = t "messenger.no_data"
     redirect_to root_path
   end
 end
