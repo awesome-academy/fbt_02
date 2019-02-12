@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :load_user, only: :show
+  before_action :load_user, only: %i(show edit update)
 
   def show; end
 
@@ -16,6 +16,18 @@ class UsersController < ApplicationController
       redirect_to root_path
     else
       render :new
+    end
+  end
+
+  def edit; end
+
+  def update
+    @user.gender = params[:gender].to_i
+    if @user.update_attributes user_params
+      flash[:success] = t "user.update"
+      redirect_to @user
+    else
+      render :edit
     end
   end
 

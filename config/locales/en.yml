@@ -130,6 +130,11 @@ en:
     date_birth: "Birth Date: "
     address: "Address: "
     phone: "Phone: "
+    update: "Update successful"
+    edit: "Edit User"
+    save: "Save changes"
+    update_profile: "Update Profile"
+    change: "Change"
   activerecord:
     attributes:
       user:
