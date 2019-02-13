@@ -1,0 +1,8 @@
+<%= form_for @tour.comments.build, url: tour_comments_path(@tour),
+  method: :post do |f| %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <%= f.hidden_field :tour_id, value: @tour.id %>
+  <%= f.label t "comment.contents" %>
+  <%= f.text_field :content, class: "form-control" %>
+  <%= f.submit t("comment.add"), class: "btn btn-lg btn-primary" %>
+<% end %>
