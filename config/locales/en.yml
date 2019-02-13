@@ -83,6 +83,8 @@ en:
   framgia:
     base_title: "Framgia booking tours"
   admin:
+    update: "Update"
+    delete: "Delete"
     title: "Framgia booking tours"
     dashboard: "Dashboard"
     user: "User"
@@ -91,7 +93,8 @@ en:
     tour: "Tours"
     statictis: "Statictis"
     by: "by"
-    category: "Category"
+    destination: "Desination tours"
+    international: "International tours"
     profile: "Profile"
     header: "Header"
     review:

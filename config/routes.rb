@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     root "static_pages#index"
     resources :reviews
     resources :users
+    resources :tours
   end
   get "/login", to: "sessions#login"
   post "/login", to: "sessions#create"
