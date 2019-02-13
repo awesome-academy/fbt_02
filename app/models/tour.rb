@@ -5,6 +5,8 @@ class Tour < ApplicationRecord
   has_many :comments
   has_many :book_tours
 
+  scope :destination_tour,
+    ->{where category_id: Settings.admin.destination_tour}
   scope :newest, ->{order :created_at}
   scope :order_by_name, ->{order :name}
   scope :search_tour, lambda{|search|

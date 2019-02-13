@@ -1,0 +1,13 @@
+<tr>
+  <td><%= tour.id %></td>
+  <td><%= tour.name %></td>
+  <td><%= tour.start_palace %></td>
+  <td><%= tour.end_palace %></td>
+  <td><%= tour.transport %></td>
+  <td><%= tour.quantity %></td>
+  <td>
+    <%= link_to t("admin.update"), edit_admin_tour_path(tour) %>
+    |
+    <%=link_to t("admin.delete"), admin_tours_path(tour), method: :delete %>
+  </td>
+</tr>
