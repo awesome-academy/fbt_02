@@ -152,3 +152,14 @@ en:
       default: "%Y-%m-%d"
       short: "%b %d"
       long: "%d/%m/%Y"
+  comment:
+    successful: "Successfully Commented"
+    fails: "Comment Failed"
+    contents: "Content"
+    cout: "comment"
+    add: "comment now"
+    review: "Review"
+    name: "Name: "
+    content: "Content: "
+
+

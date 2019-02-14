@@ -43,4 +43,11 @@
       </div>
     </div>
   </article>
+  <div class="comment">
+    <br>
+    <h4><%= @tour.comments.count %> <%= t("comment.cout") %></h4>
+    <%= render @tour.comments %>
+    <h3><%= t("comment.review") %></h3>
+    <%= render "comments/form" %>
+  </div>
 </div>
