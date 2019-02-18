@@ -117,7 +117,7 @@ en:
       action: "Action"
       delete: "Delete"
   user:
-    sign_up: "Sign up now!"
+    sign_up: "Sign up"
     btntext: "Create my account"
     male: "Male"
     female: "Female"
@@ -161,5 +161,3 @@ en:
     review: "Review"
     name: "Name: "
     content: "Content: "
-
-

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "static_pages#home"
   namespace :admin do
     root "static_pages#index"
@@ -6,11 +7,6 @@ Rails.application.routes.draw do
     resources :users
     resources :tours
   end
-  get "/login", to: "sessions#login"
-  post "/login", to: "sessions#create"
-  delete "/logout",  to: "sessions#destroy"
-  get "/signup", to: "users#new"
-  # post "/signup", to: "users#create"
   resources :tours do
     resources :comments
   end
