@@ -8,6 +8,7 @@ en:
   tour_infor: "Confirm Tour"
   welcome: "Welcome to Framgia Booking Tour"
   error: "The form contains %{errors_count}."
+  manager: "Manager"
   layouts:
     application:
       booking_tour: "BookingTour"

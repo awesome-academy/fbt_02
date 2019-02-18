@@ -1,5 +1,8 @@
 class ToursController < ApplicationController
+  before_action :authenticate_user!, only: :show
   before_action :load_tour, only: :show
+  authorize_resource
+
   def index
     @tours = Tour.newest.search_tour(params[:search])
       .paginate page: params[:page], per_page: Settings.tour.per_page
