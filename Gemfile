@@ -11,6 +11,7 @@ gem "bcrypt-ruby"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass", "3.3.7"
 gem "bootstrap-will_paginate", "1.0.0"
+gem "cancancan", "~> 2.3"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "devise"
