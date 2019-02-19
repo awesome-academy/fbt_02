@@ -4,4 +4,9 @@
 <br>
 <%= time_ago_in_words(comment.created_at) %>
 <br>
+<% if can? :destory, comment %>
+  <%= link_to "delete", [comment.tour, comment], method: :delete,
+    data: { confirm: t("comment.you_sure") } %>
+<% end %>
+<br>
 <br>

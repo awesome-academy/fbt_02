@@ -159,3 +159,5 @@ en:
     review: "Review"
     name: "Name: "
     content: "Content: "
+    delete: "Successfully deleted"
+    you_sure: "Are you sure?"
