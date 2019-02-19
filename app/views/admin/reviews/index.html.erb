@@ -5,14 +5,14 @@
       <h1 class="page-header"><%= t("admin.review.title") %></h1>
     </div>
   </div>
-  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  <div>
     <div class="btn-group">
       <div class="row">
-        <div class="navbar-form navbar-right">
-          <%= form_tag admin_reviews_path do %>
-          <%= label_tag :review %>
-          <%= text_field_tag :review %>
-          <%= submit_tag t("admin.review.search"), class: "btn btn-primary" %>
+        <div class="search">
+          <%= search_form_for @search, url: admin_reviews_path do |f| %>
+          <%= f.label :user_name, t("admin.user_name") %>
+          <%= f.search_field :user_name_cont, class: "form_label" %>
+          <%= f.submit t("admin.review.search"), class: "btn btn-primary" %>
           <% end %>
         </div>
       </div>

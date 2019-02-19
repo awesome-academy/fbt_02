@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
-    @tours = Tour.order_by_name.search_tour(params[:search])
-      .paginate page: params[:page], per_page: Settings.tour.per_page
+    @search = Tour.ransack params[:q]
+    @tours = @search.result.order_name.paginate page: params[:page],
+      per_page: Settings.tour.per_page
   end
 end

@@ -5,6 +5,10 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t("admin.user.title"), admin_users_path %></li>
+        <li><%= link_to t("admin.category"), "#" %></li>
+        <li><%= link_to t("admin.tour"), "#" %></li>
+        <li><%= link_to t("admin.review.title"), admin_reviews_path %></li>
         <li><%= link_to t("admin.profile"), "#" %></li>
         <li><%= link_to t("admin.logout"), "#" %></li>
       </ul>
