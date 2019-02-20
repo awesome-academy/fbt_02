@@ -8,8 +8,5 @@ class Tour < ApplicationRecord
   scope :destination_tour,
     ->{where category_id: Settings.admin.destination_tour}
   scope :newest, ->{order :created_at}
-  scope :order_by_name, ->{order :name}
-  scope :search_tour, lambda{|search|
-    where("tours.name LIKE ?", "%#{search.strip}%") if search.present?
-  }
+  scope :order_name, ->{order :name}
 end

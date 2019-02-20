@@ -106,6 +106,7 @@ en:
       id: "ID"
       name: "Full Name"
       content: "Content"
+    user_name: "User name"
     user:
       title: "Users"
       id: "ID"

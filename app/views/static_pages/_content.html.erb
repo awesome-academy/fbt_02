@@ -1,23 +1,7 @@
 <!-- Content-->
 <div class="md-content">
-  <!-- Section -->
-  <section class="awe-section pd-0" id="box-search">
-    <div class="box-search-wrapper">
-      <div class="container">
-        <!-- box-search -->
-        <div class="box-search">
-          <div class="form-item">
-            <%= form_tag tours_path, method: :get, paginate: :per_page do %>
-            <%= text_field_tag :search, params[:search], placeholder: t("content.search"), class: "form_label" %>
-          </div>
-          <%= submit_tag t("content.search"), name: nil, class: "md-btn md-btn--primary md-btn--pill" %>
-          <% end %>
-        </div>
-      </div><!-- End / box-search -->
-    </div>
-  </div>
-</section>
-
+<!-- Section -->
+  <%= render "section" %>
 <!-- End / Section -->
 <!-- Section -->
 <section class="awe-section bg-gray">

@@ -4,8 +4,9 @@ class ToursController < ApplicationController
   authorize_resource
 
   def index
-    @tours = Tour.newest.search_tour(params[:search])
-      .paginate page: params[:page], per_page: Settings.tour.per_page
+    @search = Tour.ransack params[:q]
+    @tours = @search.result.newest.paginate page: params[:page],
+      per_page: Settings.tour.per_page
   end
 
   def show; end
