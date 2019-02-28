@@ -5,6 +5,8 @@ tour:
 book_tour:
   min_quantity: 1
   max_quantity: 49
+  quantity_cant: " has exceeded the remaining amount"
+  quantity_nil: " the number must not be blank"
 avatar:
   size: 80
 user:

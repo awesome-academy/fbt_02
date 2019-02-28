@@ -24,6 +24,8 @@ en:
     start_palace: "Start palace : "
     end_palace: "End palace : "
     book_tour: "Book a tour"
+    status: "Status : "
+    slot: " Slot"
   book_tour:
     customer_name: "Customer : "
     address: "Address : "
