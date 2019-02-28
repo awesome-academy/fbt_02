@@ -1,6 +1,6 @@
 class ToursController < ApplicationController
   before_action :authenticate_user!, only: :show
-  before_action :load_tour, only: :show
+  before_action :load_tour, only: %i(show load_status)
   authorize_resource
 
   def index
@@ -9,7 +9,9 @@ class ToursController < ApplicationController
       per_page: Settings.tour.per_page
   end
 
-  def show; end
+  def show
+    @status = load_status
+  end
 
   private
 
@@ -18,5 +20,10 @@ class ToursController < ApplicationController
     return if @tour
     flash[:danger] = t "messenger.no_data"
     render :index
+  end
+
+  def load_status
+    quantity = @tour.book_tours.sum :quantity
+    @tour.quantity - quantity
   end
 end
